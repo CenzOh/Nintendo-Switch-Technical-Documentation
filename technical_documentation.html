@@ -1,0 +1,204 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html>
+  
+  <div id="background">
+    <img class="background_stretch" src="https://wallpaperaccess.com/full/749932.png" alt="Switch_Color_Scheme">
+  </div>
+  
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Nintendo_switch_logo.png" alt="Switch_Logo" id="logo">
+  
+  <style>
+    #navbar{
+      position: fixed;
+      height: 100%;
+      min-width: 290px;
+      width: 290px;
+      
+      top: 0px;
+      left: 0px;
+      
+      color: black;
+      
+      background-color: #FFCBA4;
+      padding: 130px 10px;
+      z-index: 3;
+    }
+    
+    #navbar a:hover{
+      color: purple;
+      text-decoration: underline;
+    }
+    
+    body{
+      font-family: 'arial';
+      color: black;
+      background-color: white;
+      line-height: 1.4;
+      width: 100%;
+    }
+
+    
+    .background_stretch{
+      width: 100%;
+      height: 20%;
+    }
+    
+    #logo{
+      position: fixed;
+      height: auto;
+      min-width: 110px;
+      width: 110px;
+      
+      top: 10px;
+      left: 0px;
+      
+      z-index: 4;
+    }
+    
+    #main-doc{
+      padding: 10px 310px;
+    }
+    
+    footer{
+      padding: 20px;
+      text-align: center;
+      background-color: #FF5F53;
+      border-radius: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: black;
+      font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 800px){
+      /* mobile devices unfinished*/
+      #logo{
+        position: absolute;
+        height: auto;
+        min-width: 290px;
+        width: 290px;
+        
+        top: 10px;
+        left: 10px;
+        
+        z-index: 2;
+      }
+      
+      #navbar{
+        position: absolute;
+        max-height: 290px;
+        max-width: 290px;
+        width: 290px;
+        
+        top: 0px;
+        left: 0px;
+        
+        color: black;
+        background-color: white;
+        padding: 50px 10px;
+        
+        z-index: 1;
+      }
+      
+      .header_text{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-gap: 50px;
+        grid-auto-rows: minmax(100px, auto);
+        
+        width: 100%;
+        height: auto;
+        
+        position: absolute;
+        top: 18vw;
+        left: 300px;
+        z-index: 2;
+      }
+        
+        #main-doc{
+          position: relative;
+          margin-left: 0px;
+          margin-top: 300px;
+        }
+      }
+
+  </style>
+  
+  <nav id="navbar">
+    <header><b>Nintendo Switch</b></header>
+    <ul>
+      <li> <a class="nav-link" href="#Introduction">Introduction </a> </li>
+      <li> <a class="nav-link" href="#Switch_Lite">Switch Lite </a> </li>
+      <li> <a class="nav-link" href="#Accessories">Accessories </a> </li>
+      <li> <a class="nav-link" href="#Online">Online </a> </li>
+      <li> <a class="nav-link" href="#Reference">Reference </a> </li>
+    </ul>
+  </nav>
+  
+  
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header><b>Introduction</b></header>
+      
+      <p>
+        <code>Welcome to the Nintendo Switch Technical Documentation!</code>
+      </p>
+      
+    <section class="main-section" id="Switch_Lite">
+      <header><b>Switch Lite</b></header>
+      <p>
+        Nintendo Switch Lite is an affordable option in the Switch family that is dedicated to handheld play. Here is what the Nintendo Switch Lite offers:<br>
+      </p>
+      <p>
+        <i>Play Modes:</i><br>
+        <code> Only available in Handheld Mode</code> <br>
+        <i>Compatible games:</i><br>
+        <code> Nintendo Switch games that support Handheld Mode</code> <br>
+        <i>Joy-Con Controllers:</i><br>
+        <code> Joy-Con controllers are not included. Note: System does not include HD Rumble or IR Motion Controller</code> <br>
+        <i>Battery Life:</i><br>
+        <code> Approximately 3-7 Hours. Mode Number: HDH-001. The battery life depends on which software you play. For instance, playing The Legend of Zelda: Breath of the Wild will last your battery approximately 4 hours.</code>
+      </p>
+      
+    <section class="main-section" id="Accessories">
+      <header><b>Accessories</b></header>
+      <p>
+        A list of some Nintendo Switch Acessories:
+      </p>
+        <p>
+          <ul>
+            <li> Pro Cotroller </li>
+            <li> Joy-Con Controllers </li>
+            <li> Joy-COn Chargin Grip <li>
+            <li> AC Adapter </li>
+        </ul>
+        </p>
+      
+    <section class="main-section" id="Online">
+      <header><b>Online</b></header>
+      <p>
+         Features you gain when subscribing to Nintendo Switch Online 
+      </p>
+      <p>
+          <ul>
+            <li> Access to 90+ NES and Super NES games </li>
+            <li> Exclusive games and special offers </li> 
+            <li> Cloud saves </li> 
+            <li> Play online with supported games </li> 
+          </ul>
+        </ul>
+      </p>
+      
+    <section class="main-section" id="Reference">
+      <header><b>Reference</b></header>
+    <p>
+      More information about the Nintendo Switch can be found <a href="https://www.nintendo.com/switch/"> here </a>
+     </p>
+      
+      <footer> © 2021 Vincenzo Mezzio </footer>
+    
+  </main>
+    
+</html>
